@@ -17,7 +17,7 @@ const Settings = ({ user }) => {
 
   const navigate = useNavigate()
 
-  const mediaFolder = 'http://localhost:3001/media'
+  const mediaFolder = 'https://blog-it-mern.herokuapp.com/media/'
 
   const handleSubmit = async (e) => {
     e.preventDefault()

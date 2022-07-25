@@ -15,7 +15,7 @@ const SinglePost = ({ user }) => {
   const [title, setTitle] = useState('')
   const [update, setUpdate] = useState(false)
 
-  const mediaFolder = 'http://localhost:3001/media/'
+  const mediaFolder = 'https://blog-it-mern.herokuapp.com/media/'
 
   useEffect(() => {
     getPost(params.id)

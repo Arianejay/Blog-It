@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const Posts = () => {
   const [posts, setPosts] = useState([])
-  const mediaFolder = 'http://localhost:3001/media/'
+  const mediaFolder = 'https://blog-it-mern.herokuapp.com/media/'
 
   useEffect(() => {
     fetchPost()

@@ -12,7 +12,7 @@ const Navbar = ({ user }) => {
   const [isOpen, setOpen] = useState(false)
   const { dispatch } = useContext(Context)
 
-  const mediaFolder = 'http://localhost:3001/media/'
+  const mediaFolder = 'https://blog-it-mern.herokuapp.com/media/'
 
   const handleLogout = () => {
     dispatch({ type: 'LOGOUT' })

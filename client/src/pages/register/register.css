@@ -1,0 +1,131 @@
+.register__wrapper {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url('../../media//login.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.register__wrap {
+  width: 23rem;
+  height: 27rem;
+  padding: 1.5rem;
+  color: var(--text);
+  background: var(--bg__primary);
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+}
+
+/* Heading */
+.register__heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.register__heading h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.register__heading h1 span {
+  font-size: 2rem;
+}
+.register__heading p {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+.register__heading span,
+.register__interaction--wrap h1 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* Input box */
+form {
+  text-align: center;
+}
+.register__input--box {
+  margin-bottom: 2rem;
+}
+.register__input--box input {
+  font-size: 1rem;
+  padding: 0 0.5rem;
+  height: 2.5rem;
+  width: 100%;
+  outline: none;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.register__input--box input::placeholder {
+  color: var(--placeholder);
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+.register__input--box input:focus {
+  border: 1.5px solid var(--text__blue);
+}
+.username,
+.email {
+  margin-bottom: 0.5rem;
+}
+.password {
+  margin-bottom: 1rem;
+}
+
+/* register */
+.register__interaction--wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.register__interaction--wrap h1 {
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--text__blue);
+}
+.register__interaction--wrap button {
+  height: 2rem;
+  width: 5rem;
+  font-size: 0.9rem;
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: var(--text__blue);
+  color: var(--bg__primary);
+  transition: all 0.3s ease-in-out;
+}
+.register__interaction--wrap button:active {
+  transform: scale(0.97);
+}
+
+/* Media Queries */
+@media screen and (min-width: 281px) and (max-width: 767px) {
+  .register__wrap {
+    width: 20rem;
+    height: 26rem;
+  }
+}
+@media screen and (max-width: 280px) {
+  .register__wrap {
+    width: 15rem;
+    height: 28rem;
+  }
+  .register__interaction--wrap h1 {
+    margin-left: 0;
+    font-size: 0.7rem;
+  }
+}

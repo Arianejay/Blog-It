@@ -1,0 +1,96 @@
+.settings__wrapper {
+  padding: 1rem 3rem;
+  width: 100%;
+}
+
+/* Heading */
+.settings__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.settings__heading h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: 'ubuntu', sans-serif;
+}
+.settings__heading h2 {
+  font-size: 0.9rem;
+  color: var(--trash__icon);
+  cursor: pointer;
+}
+
+/* Content */
+.settings__wrapper form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 1.5rem;
+}
+.settings__wrapper label {
+  margin-bottom: 0.5rem;
+}
+.settings__img {
+  margin-bottom: 1.5rem;
+}
+.settings__img img {
+  width: 9rem;
+  margin-right: 1rem;
+}
+
+/* Inputs */
+.settings__wrapper form input {
+  margin-bottom: 1rem;
+  height: 2rem;
+  width: 50%;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1px solid var(--placeholder);
+  outline: none;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.settings__wrapper form input:focus {
+  border-bottom: 1.5px solid var(--text__blue);
+}
+.settings__wrapper form input::placeholder {
+  color: var(--placeholder);
+  padding-left: 0.2rem;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+/* Button */
+.settings__button--wrap {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.settings__button--wrap button {
+  height: 2rem;
+  width: 4rem;
+  margin-right: 1.5rem;
+  font-size: 0.9rem;
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: var(--text__blue);
+  color: var(--bg__primary);
+  transition: all 0.3s ease-in-out;
+}
+.settings__button--wrap button:active {
+  transform: scale(0.97);
+}
+.settings__button--wrap p {
+  color: var(--edit__icon);
+  font-size: 0.9rem;
+}
+
+/* Media Queries */
+@media screen and (min-width: 280px) and (max-width: 768px) {
+  .settings__wrapper {
+    padding: 1rem 1rem;
+  }
+}

@@ -1,0 +1,123 @@
+.singlePost__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+
+/* Image */
+.singlePost__wrapper img {
+  height: 50vh;
+  width: 50vw;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+/* Heading */
+.singlePost__heading {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+.singlePost__heading h1 {
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  width: 100%;
+}
+.singlePost__title--icons {
+  display: flex;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.singlePost__icons--edit {
+  color: var(--edit__icon);
+}
+.singlePost__icons--trash {
+  color: var(--trash__icon);
+  margin-left: 0.2rem;
+}
+.singlePost__icons--edit:active,
+.singlePost__icons--trash:active {
+  transform: scale(0.97);
+}
+
+/* Author */
+.singlePost__author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 1rem 0 2rem 0;
+  font-size: 1rem;
+  color: var(--text__blue);
+}
+.singlePost__author h1 {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.singlePost__author h1 span {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+}
+
+/* Content */
+.singlePost__content {
+  text-align: justify;
+  width: 100%;
+}
+.singlePost__content p::first-letter {
+  margin-left: 1.5rem;
+  font-size: 1.8rem;
+  font-family: 'Dancing Script', cursive;
+  text-transform: capitalize;
+}
+
+/* Edit */
+.singlePost__heading--edit {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.singlePost__heading--edit input {
+  height: 2rem;
+  width: 30%;
+  border: none;
+  outline: none;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  font-size: 1.2rem;
+  font-family: 'Ubuntu', sans-serif;
+  background: transparent;
+  color: var(--placeholder);
+}
+.singlePost__heading--edit button {
+  height: 2rem;
+  width: 4rem;
+  font-size: 0.9rem;
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: var(--text__blue);
+  color: var(--bg__primary);
+  transition: all 0.3s ease-in-out;
+}
+.singlePost__heading--edit button:active {
+  transform: scale(0.97);
+}
+.singlePost__content--edit {
+  font-size: 1.2rem;
+  width: 100%;
+  height: 20rem;
+  resize: none;
+  outline: none;
+  border: none;
+  background: transparent;
+  color: var(--placeholder);
+}

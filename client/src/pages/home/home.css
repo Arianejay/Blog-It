@@ -1,0 +1,13 @@
+.home__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem 4rem;
+}
+
+/* Media Queries */
+@media screen and (min-width: 280px) and (max-width: 820px) {
+  .home__content {
+    padding: 0.5rem;
+  }
+}

@@ -1,0 +1,35 @@
+.about__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+/* Heading */
+.about__heading {
+  margin-bottom: 2rem;
+}
+.about__heading h1 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* Content*/
+.about__content {
+  text-align: justify;
+  padding: 0 2rem;
+}
+.about__content::first-letter {
+  margin-left: 1.5rem;
+  font-size: 1.8rem;
+  font-family: 'Dancing Script', cursive;
+  text-transform: capitalize;
+}
+
+/* Media Queries */
+@media screen and (min-width: 280px) and (max-width: 768px) {
+  .about__wrapper {
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+  }
+}

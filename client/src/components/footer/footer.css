@@ -1,0 +1,55 @@
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 4rem 0 0;
+  width: 100%;
+  background: var(--text);
+  color: var(--bg__primary);
+  padding: 1.5rem;
+}
+
+/* Icons */
+.footer__icons {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.1rem;
+  width: 10%;
+  margin: 0 50%;
+  padding: 0.5rem;
+}
+.footer__icons--each {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.footer__icons--each:hover {
+  color: var(--text__blue);
+}
+
+/* Rights */
+.footer__rights {
+  font-size: 0.8rem;
+}
+.footer__rights span {
+  font-family: 'Urdu', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.footer__icons a {
+  color: inherit;
+}
+
+/* Media Queries */
+@media screen and (min-width: 280px) and (max-width: 767px) {
+  .footer__icons {
+    width: 100%;
+    padding: 0.5rem 30%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__icons {
+    width: 100%;
+    padding: 0.5rem 40%;
+  }
+}

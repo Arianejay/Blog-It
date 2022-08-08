@@ -1,5 +1,5 @@
 # Blog-it-MERN
-Blog It is a CRUD app, built with MERN (MongoDB, Express, React Js, Node Js) stack.
+Blog It is a Blog CRUD app, built with MERN (MongoDB, Express, React Js, Node Js) stack.
 
 Demo here: https://mellow-cobbler-136d1e.netlify.app/
 

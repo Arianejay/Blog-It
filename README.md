@@ -1,7 +1,38 @@
 # Blog-it-MERN
 Blog It is a CRUD app, built with MERN (MongoDB, Express, React Js, Node Js) stack.
 
-It has a login and register functionality with a bcrypt security. You can write a blog/article with a picture, 
-edit your post, delete your post, edit your profile, and delete your profile. 
-
 Demo here: https://mellow-cobbler-136d1e.netlify.app/
+
+Functionalities:
+  - Login and Register
+  - View article/blogs even when you are not logged in
+  - Write article/blog (Contains picture)
+  - Delete and Update your own article/blog
+  - Update your account
+  
+Pages:
+  - Home (Contains all the article/blogs)
+  - Login and Register
+  - Each post/article/blog (Specific by Id)
+  - Write article/blog
+  - About
+  
+Dependecies:
+
+Client Side:
+  - axios
+  - framer-motion
+  - hamburger-react
+  - react-router-dom
+  - react-icons
+  - uuid
+  
+Server Side: 
+  - bcrypt
+  - cors
+  - dotenv
+  - express
+  - mongoose
+  - multer
+  - nodemon
+  - path

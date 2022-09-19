@@ -16,6 +16,9 @@
 Blog It is a Blog CRUD app, built with MERN (MongoDB, Express, React Js, Node Js) stack.
 
 Demo: https://mellow-cobbler-136d1e.netlify.app/
+Demo account:
+ Username: user 
+ Password: 123
 
 <!-- Screenshots -->
 ### :camera: Screenshots

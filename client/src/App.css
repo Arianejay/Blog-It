@@ -27,8 +27,20 @@ body {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.5px;
 }
+
+/* link */
 .link {
   text-decoration: none;
   font-family: inherit;
   color: inherit;
+}
+
+/* loader */
+.loader__container {
+  width: 100%;
+  height: 56vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
 }

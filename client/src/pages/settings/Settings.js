@@ -1,18 +1,29 @@
-import './settings.css'
-import Navbar from '../../components/navbar/Navbar'
-import { BiImageAdd } from 'react-icons/bi'
-import { useState, useContext } from 'react'
-import { Context } from '../../context/Context'
+// react
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { v4 } from 'uuid'
 import { axiosInstance } from '../../config'
-import { useNavigate } from 'react-router-dom'
 
-const Settings = ({ user }) => {
+// css
+import './settings.css'
+import { BiImageAdd } from 'react-icons/bi'
+
+// imports
+import Navbar from '../../components/navbar/Navbar'
+
+// context
+import { useContext } from 'react'
+import { Context } from '../../context/Context'
+
+const Settings = () => {
   const [file, setFile] = useState(null)
   const [username, setUsername] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [success, setSuccess] = useState(false)
+
+  // context
+  const { user } = useContext(Context)
   const { dispatch } = useContext(Context)
 
   const navigate = useNavigate()

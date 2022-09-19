@@ -1,12 +1,19 @@
+// react
 import React from 'react'
+
+// css
 import './about.css'
+
+// data
 import { aboutData } from './Data'
+
+// imports
 import Navbar from '../../components/navbar/Navbar'
 
-const about = ({ user }) => {
+const about = () => {
   return (
     <>
-      <Navbar user={user} />
+      <Navbar />
       <div className="about__wrapper">
         <div className="about__heading">
           <h1>About</h1>

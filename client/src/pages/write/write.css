@@ -8,7 +8,6 @@
 /* Write input */
 .write__wrapper img {
   height: 50vh;
-  width: 50vw;
   border-radius: 1rem;
   object-fit: cover;
 }

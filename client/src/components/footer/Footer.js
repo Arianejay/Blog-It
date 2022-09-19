@@ -1,4 +1,7 @@
+// react
 import React from 'react'
+
+// css
 import './footer.css'
 import { MdOutlineEmail } from 'react-icons/md'
 import { AiFillGithub } from 'react-icons/ai'

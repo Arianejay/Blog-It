@@ -1,7 +1,12 @@
+// react
 import React, { useContext } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+
+// css
 import './sidebar.css'
 import { motion } from 'framer-motion'
-import { Link, useNavigate } from 'react-router-dom'
+
+// context
 import { Context } from '../../context/Context'
 
 const Sidebar = ({ user }) => {

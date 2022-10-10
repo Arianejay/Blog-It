@@ -1,17 +1,29 @@
+// react
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { axiosInstance } from '../../config'
+import { v4 } from 'uuid'
+
+// css
 import './write.css'
 import { BiImageAdd } from 'react-icons/bi'
-import Navbar from '../../components/navbar/Navbar'
-import { v4 } from 'uuid'
-import { axiosInstance } from '../../config'
-import { useNavigate } from 'react-router-dom'
 
-const Write = ({ user }) => {
+// imports
+import Navbar from '../../components/navbar/Navbar'
+
+// context
+import { useContext } from 'react'
+import { Context } from '../../context/Context'
+
+const Write = () => {
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
   const [file, setFile] = useState(null)
 
   const navigate = useNavigate()
+
+  // context
+  const { user } = useContext(Context)
 
   const handleSubmit = async (e) => {
     e.preventDefault()

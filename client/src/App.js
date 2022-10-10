@@ -1,18 +1,19 @@
-import './App.css'
+// react
 import { BrowserRouter } from 'react-router-dom'
-import Main from './pages/main/Main'
+
+// css
+import './App.css'
 import { AnimatePresence } from 'framer-motion'
-import { useContext } from 'react'
-import { Context } from './context/Context'
+
+// imports
+import Main from './pages/main/Main'
 
 function App() {
-  const { user } = useContext(Context)
-
   return (
     <div className="App">
       <BrowserRouter>
         <AnimatePresence>
-          <Main user={user} />
+          <Main />
         </AnimatePresence>
       </BrowserRouter>
     </div>
@@ -20,11 +21,3 @@ function App() {
 }
 
 export default App
-
-// Navbar
-// Post
-// Login
-// Register
-// Settings
-// SinglePost
-// Write

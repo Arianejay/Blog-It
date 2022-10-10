@@ -1,18 +1,25 @@
+// react
 import React, { useContext, useState } from 'react'
+import { Link } from 'react-router-dom'
+
+// css
 import './navbar.css'
-import Sidebar from '../sidebar/Sidebar'
 import Hamburger from 'hamburger-react'
 import { BiLogIn } from 'react-icons/bi'
 import { TbLogout } from 'react-icons/tb'
 import { MdSettings } from 'react-icons/md'
-import { Link } from 'react-router-dom'
+
+// imports
+import Sidebar from '../sidebar/Sidebar'
+
+// context
 import { Context } from '../../context/Context'
 
 const Navbar = ({ user }) => {
   const [isOpen, setOpen] = useState(false)
   const { dispatch } = useContext(Context)
 
-  const mediaFolder = 'http://localhost:3001/media/'
+  const mediaFolder = 'https://blog-it-mern.herokuapp.com/media/'
 
   const handleLogout = () => {
     dispatch({ type: 'LOGOUT' })

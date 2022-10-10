@@ -25,7 +25,8 @@ Demo account:
 ### :camera: Screenshots
 
 <div align="center"> 
-  <img src="https://placehold.co/600x400?text=Your+Screenshot+here" alt="screenshot" />
+  <img src="https://user-images.githubusercontent.com/103638111/194789355-ceae15bf-2e12-484a-9a32-18f9216cb9da.png" alt="img" />
+  
 </div>
 
 
